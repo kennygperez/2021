@@ -1,0 +1,49 @@
+@import './colors.scss';
+@import './screen.scss';
+
+.header {
+	margin-bottom: 6rem;
+	overflow: hidden;
+
+	&__text {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&__h1 {
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 4rem;
+		font-size: 2.5rem;
+		width: 100%;
+
+		@media only screen and (min-width: $screen-sm) {
+			font-size: 3.5rem;
+		}
+
+		@media only screen and (min-width: $screen-md) {
+			font-size: 4rem;
+		}
+
+		@media only screen and (min-width: $screen-lg) {
+			font-size: 4.5rem;
+		}
+	}
+
+	&__primary {
+		color: $header-hue;
+	}
+
+	&__secondary {
+		color: $tag-default-fg;
+	}
+
+	&__span {
+		display: inline-block;
+	}
+
+	&__connect {
+		margin-bottom: 6rem;
+	}
+}

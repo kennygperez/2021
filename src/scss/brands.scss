@@ -1,0 +1,39 @@
+@import './colors.scss';
+@import './screen.scss';
+
+.brands {
+	&__h2 {
+		text-align: center;
+		width: 100%;
+		margin-bottom: 4rem;
+	}
+
+	&__ul {
+		padding: 0;
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		margin: 0 -0.75rem -0.75rem;
+	}
+
+	&__li {
+		flex: 1 1 100%;
+		padding: 0 0.75rem;
+		margin: 0 0 1.5rem;
+
+		@media only screen and (min-width: $screen-sm) {
+			flex: 0 0 50%;
+		}
+
+		@media only screen and (min-width: $screen-md) {
+			flex: 0 0 33.33%;
+		}
+
+		@media only screen and (min-width: $screen-lg) {
+			flex: 0 0 25%;
+		}
+	}
+}

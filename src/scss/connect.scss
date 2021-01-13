@@ -1,0 +1,24 @@
+@import './colors.scss';
+
+.connect {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	&__item {
+		width: 2rem;
+		height: 2rem;
+		border-radius: 0.5rem;
+		background-color: $tag-default-bg;
+		margin-left: 1.5rem;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}

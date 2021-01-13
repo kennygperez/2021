@@ -1,0 +1,49 @@
+@import './colors.scss';
+
+.tag {
+	height: 32px;
+	line-height: 32px;
+	padding: 0 12px;
+	border-radius: 1rem;
+	display: inline-block;
+
+	&--type {
+		// green
+		&-node-express,
+		&-mongodb,
+		&-vue {
+			color: $tag-green-fg;
+			background-color: $tag-green-bg;
+		}
+
+		// orange
+		&-aws {
+			color: $tag-orange-fg;
+			background-color: $tag-orange-bg;
+		}
+
+		// yellow
+		&-websocket {
+			color: $tag-yellow-fg;
+			background-color: $tag-yellow-bg;
+		}
+
+		// blue
+		&-react-native {
+			color: $tag-blue-fg;
+			background-color: $tag-blue-bg;
+		}
+
+		// white
+		&-expo,
+		&-braintree {
+			color: $tag-white-fg;
+			background-color: $tag-white-bg;
+		}
+
+		&-default {
+			color: $tag-default-fg;
+			background-color: $tag-default-bg;
+		}
+	}
+}

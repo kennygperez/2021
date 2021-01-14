@@ -2,9 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import App from './components/App';
+import Splash from './components/Splash';
 
 ReactDOM.render(
 	<React.StrictMode>
+		<Splash />
 		<App />
 	</React.StrictMode>,
 	document.getElementById('root')

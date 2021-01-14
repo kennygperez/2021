@@ -12,6 +12,10 @@ const Connect: FunctionComponent = () => {
 			title: 'Linkedin',
 			href: 'https://www.linkedin.com/in/kennygperez/',
 		},
+		{
+			title: 'Resume',
+			href: '',
+		},
 	];
 
 	return (

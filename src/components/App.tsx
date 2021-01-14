@@ -39,7 +39,8 @@ const App: FunctionComponent = () => {
 		},
 		{
 			title: 'VBI Ecommerce Website',
-			brief: '',
+			brief:
+				'The primary online presences for Visuals by Impulse, for customers to purchase stream overlays and logos from the marketplace. Powered from Nuxt and leveraging the Shopify CMS for the marketplace and a WordPress CMS for the case studies and blogs. I lead a small development team to build the entire site from the ground up meant to overcome the previous limitation of their old site. And provide a better user experience for the user using Nuxt to pretender all the pages ahead of time.',
 			tags: [
 				'Nuxt',
 				'Vue',

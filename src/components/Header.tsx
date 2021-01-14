@@ -8,21 +8,14 @@ const Header: FunctionComponent = () => {
 		<header className='header section'>
 			<div className='header__text'>
 				<h1 className='header__h1'>
-					<span className='header__span header__span--1 header__primary'>
-						Kenny G Perez
+					<span className='header__span header__primary'>
+					Kenny G Perez&nbsp;
 					</span>
-					&nbsp;
-					<span className='header__span header__span--2 header__secondary'>
-						is a
+						<span>is a</span>
+					<span className='header__span header__primary'>
+					&nbsp;Software Engineer&nbsp;
 					</span>
-					&nbsp;
-					<span className='header__span header__span--3 header__primary'>
-						Software Engineer
-					</span>
-					&nbsp;
-					<span className='header__span header__span--4 header__secondary'>
-						based in Orlando, Florida.
-					</span>
+					<span>based in Orlando, Florida.</span>
 				</h1>
 				<div className='header__connect'>
 					<Connect />

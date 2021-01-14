@@ -4,14 +4,18 @@
 .project {
 	display: flex;
 	flex-direction: column-reverse;
-	margin-bottom: 6rem;
+	margin-bottom: 9rem;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 
 	@media only screen and (min-width: $screen-sm) {
 		&:nth-child(2n) {
 			flex-direction: row-reverse;
 
 			& .project__show {
-				margin: 0 96px 0 0;
+				margin: 0 6rem 0 0;
 			}
 		}
 
@@ -19,7 +23,7 @@
 			flex-direction: row;
 
 			& .project__show {
-				margin: 0 0 0 96px;
+				margin: 0 0 0 6rem;
 			}
 		}
 	}

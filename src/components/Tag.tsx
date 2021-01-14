@@ -6,14 +6,20 @@ export type TagTypes =
 	| 'Computer Vision'
 	| 'Facecam'
 	| 'QR Code'
-	| 'Node+Express'
+	| 'Node + Express'
 	| 'WebSocket'
 	| 'React Native'
 	| 'Expo'
 	| 'AWS'
+	| 'Nuxt'
 	| 'Vue'
 	| 'Braintree'
-	| 'MongoDB';
+	| 'MongoDB'
+	| 'GraphQL'
+	| 'Twitch'
+	| 'WordPress'
+	| 'Shopify'
+	| 'PHP';
 
 interface Props {
 	tag: TagTypes;
@@ -25,22 +31,35 @@ const Tag: FunctionComponent<Props> = ({ tag }) => {
 
 function getTagTypeClassName(tag: TagTypes) {
 	switch (tag) {
-		case 'Node+Express':
-			return 'tag--type-node-express';
-		case 'MongoDB':
-			return 'tag--type-mongodb';
-		case 'Vue':
-			return 'tag--type-vue';
-		case 'WebSocket':
-			return 'tag--type-websocket';
-		case 'React Native':
-			return 'tag--type-react-native';
-		case 'Expo':
-			return 'tag--type-expo';
+		// red
+		// orange
 		case 'AWS':
-			return 'tag--type-aws';
+			return 'tag--type-orange';
+		// yellow
+		case 'WebSocket':
+			return 'tag--type-yellow';
+		// green
+		case 'Node + Express':
+		case 'Vue':
+		case 'Nuxt':
+		case 'MongoDB':
+		case 'Shopify':
+			return 'tag--type-green';
+		// blue
+		case 'React Native':
+		case 'WordPress':
+			return 'tag--type-blue';
+		// purple
+		case 'Twitch':
+		case 'PHP':
+			return 'tag--type-purple';
+		// pink
+		case 'GraphQL':
+			return 'tag--type-pink';
+		// white
+		case 'Expo':
 		case 'Braintree':
-			return 'tag--type-braintree';
+			return 'tag--type-white';
 		default:
 			return 'tag--type-default';
 	}

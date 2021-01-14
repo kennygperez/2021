@@ -8,35 +8,42 @@
 	display: inline-block;
 
 	&--type {
-		// green
-		&-node-express,
-		&-mongodb,
-		&-vue {
+		&-red {
+			color: $tag-red-fg;
+			background-color: $tag-red-bg;
+		}
+
+		&-green {
 			color: $tag-green-fg;
 			background-color: $tag-green-bg;
 		}
 
-		// orange
-		&-aws {
+		&-orange {
 			color: $tag-orange-fg;
 			background-color: $tag-orange-bg;
 		}
 
-		// yellow
-		&-websocket {
+		&-yellow {
 			color: $tag-yellow-fg;
 			background-color: $tag-yellow-bg;
 		}
 
-		// blue
-		&-react-native {
+		&-blue {
 			color: $tag-blue-fg;
 			background-color: $tag-blue-bg;
 		}
 
-		// white
-		&-expo,
-		&-braintree {
+		&-purple {
+			color: $tag-purple-fg;
+			background-color: $tag-purple-bg;
+		}
+
+		&-pink {
+			color: $tag-pink-fg;
+			background-color: $tag-pink-bg;
+		}
+
+		&-white {
 			color: $tag-white-fg;
 			background-color: $tag-white-bg;
 		}

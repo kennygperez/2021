@@ -13,7 +13,7 @@ const App: FunctionComponent = () => {
 			title: 'Lachlan Computer Vision Facecam',
 			brief:
 				"Lachlan is one of the largest Fornite streamers with over 14.5 million subscribers on YouTube. I lead the development in creating a streaming facecam that would react according to Lachlan's in-game health and shield. This required me to develop a proprietary computer vision software to analyze his gameplay in real-time. Using a WebSocket connection the stats would be sent to an OBS browser source.",
-			tags: ['Computer Vision', 'Facecam', 'Node+Express', 'WebSocket'],
+			tags: ['Computer Vision', 'Facecam', 'Node + Express', 'WebSocket'],
 			embed: () => (
 				<iframe
 					title='lachlan'
@@ -35,7 +35,21 @@ const App: FunctionComponent = () => {
 			title: 'Client Portal',
 			brief:
 				'I developed a preparatory CRM software to allow VBI to manage their custom design projects, client relationships, and handle payments. I was the lead programmer on this managing a small team. We utilized Node+Express and MongoDB on the backend. VueJS on the frontend.',
-			tags: ['Node+Express', 'MongoDB', 'AWS', 'Vue', 'Braintree'],
+			tags: ['Node + Express', 'MongoDB', 'AWS', 'Vue', 'Braintree'],
+		},
+		{
+			title: 'VBI Ecommerce Website',
+			brief: '',
+			tags: [
+				'Nuxt',
+				'Vue',
+				'Node + Express',
+				'GraphQL',
+				'Twitch',
+				'WordPress',
+				'Shopify',
+				'PHP',
+			],
 		},
 	];
 

@@ -14,13 +14,10 @@ const App: FunctionComponent = () => {
 				"Lachlan is one of the largest Fornite streamers with over 14.5 million subscribers on YouTube. I lead the development in creating a streaming facecam that would react according to Lachlan's in-game health and shield. This required me to develop a proprietary computer vision software to analyze his gameplay in real-time. Using a WebSocket connection the stats would be sent to an OBS browser source.",
 			tags: ['Computer Vision', 'Facecam', 'Node + Express', 'WebSocket'],
 			embed: () => (
-				<iframe
-					title='lachlan'
+				<img
+					src='/images/ucfhere.jpg'
+					alt='of ucf here app infront of the ucf campus'
 					className='image'
-					src='https://www.youtube.com/embed/SUqYsXdPnpY'
-					frameBorder='0'
-					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-					allowFullScreen
 				/>
 			),
 		},

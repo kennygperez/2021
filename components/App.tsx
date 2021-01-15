@@ -1,5 +1,4 @@
 import { FunctionComponent } from 'react';
-import Image from 'next/image';
 
 import Header from './Header';
 import Art from './Art';
@@ -31,11 +30,10 @@ const App: FunctionComponent = () => {
 				'QRCode based attendance application utilizing a native mobile app and LTI enabled Python/Django web application. I lead the development of the mobile application. Refactored student design project code to make it production-ready and optimized the code to use the best practices. UCFHere utilized React Native and Expo SDK.',
 			tags: ['React Native', 'Expo', 'QR Code'],
 			embed: () => (
-				<Image
+				<img
 					src='/images/ucfhere.jpg'
 					alt='of ucf here app infront of the ucf campus'
 					className='image'
-					layout='fill'
 				/>
 			),
 		},
@@ -45,11 +43,10 @@ const App: FunctionComponent = () => {
 				'I developed a preparatory CRM software to allow VBI to manage their custom design projects, client relationships, and handle payments. I was the lead programmer on this managing a small team. We utilized Node+Express and MongoDB on the backend. VueJS on the frontend.',
 			tags: ['Node + Express', 'MongoDB', 'AWS', 'Vue', 'Braintree'],
 			embed: () => (
-				<Image
+				<img
 					src='/images/vbi-client-portal.jpg'
 					alt='of the VBI portal user interface'
 					className='image'
-					layout='fill'
 				/>
 			),
 		},
@@ -68,11 +65,10 @@ const App: FunctionComponent = () => {
 				'PHP',
 			],
 			embed: () => (
-				<Image
+				<img
 					src='/images/vbi-website.jpg'
 					alt='of the VBI website'
 					className='image'
-					layout='fill'
 				/>
 			),
 		},

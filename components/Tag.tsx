@@ -1,32 +1,13 @@
 import { FunctionComponent } from 'react';
 
-import '../scss/tag.scss';
-
-export type TagTypes =
-	| 'Computer Vision'
-	| 'Facecam'
-	| 'QR Code'
-	| 'Node + Express'
-	| 'WebSocket'
-	| 'React Native'
-	| 'Expo'
-	| 'AWS'
-	| 'Nuxt'
-	| 'Vue'
-	| 'Braintree'
-	| 'MongoDB'
-	| 'GraphQL'
-	| 'Twitch'
-	| 'WordPress'
-	| 'Shopify'
-	| 'PHP';
-
-interface Props {
-	tag: TagTypes;
-}
+import styles from './Tag.module.scss';
 
 const Tag: FunctionComponent<Props> = ({ tag }) => {
-	return <span className={`tag ${getTagTypeClassName(tag)}`}>{tag}</span>;
+	return (
+		<span className={styles.tag + ' ' + styles[getTagTypeClassName(tag)]}>
+			{tag}
+		</span>
+	);
 };
 
 function getTagTypeClassName(tag: TagTypes) {
@@ -66,3 +47,26 @@ function getTagTypeClassName(tag: TagTypes) {
 }
 
 export default Tag;
+
+export type TagTypes =
+	| 'Computer Vision'
+	| 'Facecam'
+	| 'QR Code'
+	| 'Node + Express'
+	| 'WebSocket'
+	| 'React Native'
+	| 'Expo'
+	| 'AWS'
+	| 'Nuxt'
+	| 'Vue'
+	| 'Braintree'
+	| 'MongoDB'
+	| 'GraphQL'
+	| 'Twitch'
+	| 'WordPress'
+	| 'Shopify'
+	| 'PHP';
+
+interface Props {
+	tag: TagTypes;
+}

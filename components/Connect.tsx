@@ -1,31 +1,36 @@
 import { FunctionComponent } from 'react';
+import Image from 'next/image';
 
-import '../scss/connect.scss';
-import githubSVG from '../assets/svg/github.svg';
-import linkedinSVG from '../assets/svg/linkedin.svg';
+import styles from './Connect.module.scss';
 
 const Connect: FunctionComponent = () => {
 	const links: Link[] = [
 		{
 			title: 'Github',
 			href: 'https://github.com/kennygperez',
-			src: githubSVG,
+			src: '/svg/github.svg',
 			alt: 'Github logo',
 		},
 		{
 			title: 'Linkedin',
 			href: 'https://www.linkedin.com/in/kennygperez/',
-			src: linkedinSVG,
+			src: '/svg/linkedin.svg',
 			alt: 'Linkedin logo',
 		},
 	];
 
 	return (
-		<ul className='connect'>
+		<ul className={styles.connect}>
 			{links.map(link => (
-				<li key={link.href} className='connect__item'>
+				<li key={link.href} className={styles.connect__item}>
 					<a href={link.href} title={link.title}>
-						<img className='connect__svg' src={link.src} alt={link.alt} />
+						<Image
+							className={styles.connect__svg}
+							src={link.src}
+							alt={link.alt}
+							width={32}
+							height={32}
+						/>
 					</a>
 				</li>
 			))}

@@ -1,15 +1,15 @@
 import { FunctionComponent } from 'react';
 
+import styles from './Footer.module.scss';
 import Connect from './Connect';
-import '../scss/footer.scss';
 
 const Footer: FunctionComponent = () => {
 	const year = new Date().getFullYear();
 
 	return (
-		<footer className='footer section'>
-			<span className='footer__copy'>&copy; {year} Kenny G Perez</span>
-			<div className='footer__connect'>
+		<footer className={styles.footer + ' section'}>
+			<span className={styles.footer__copy}>&copy; {year} Kenny G Perez</span>
+			<div className={styles.footer__connect}>
 				<Connect />
 			</div>
 		</footer>

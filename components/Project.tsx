@@ -1,14 +1,7 @@
 import { FunctionComponent } from 'react';
 
-import '../scss/project.scss';
+import styles from './Project.module.scss';
 import Tag, { TagTypes } from './Tag';
-
-export interface ProjectInfo {
-	title: string;
-	brief: string;
-	tags: TagTypes[];
-	embed?: FunctionComponent;
-}
 
 const Project: FunctionComponent<ProjectInfo> = ({
 	title,
@@ -16,21 +9,20 @@ const Project: FunctionComponent<ProjectInfo> = ({
 	tags,
 	embed,
 }) => {
-	console.log(embed);
 	return (
-		<div className='project'>
-			<div className='project__copy'>
+		<div className={styles.project}>
+			<div className={styles.project__copy}>
 				<h3>{title}</h3>
-				<p className='project__p'>{brief}</p>
-				<ul className='project__tags'>
+				<p className={styles.project__p}>{brief}</p>
+				<ul className={styles.project__tags}>
 					{tags.map((tag, key) => (
-						<li key={key} className='project__tag'>
+						<li key={key} className={styles.project__tag}>
 							<Tag tag={tag} />
 						</li>
 					))}
 				</ul>
 			</div>
-			<div className='project__show'>
+			<div className={styles.project__show}>
 				<div className='image__wrapper'>
 					{embed === undefined ? (
 						<img className='image' src='' alt='' />
@@ -44,3 +36,10 @@ const Project: FunctionComponent<ProjectInfo> = ({
 };
 
 export default Project;
+
+export interface ProjectInfo {
+	title: string;
+	brief: string;
+	tags: TagTypes[];
+	embed?: FunctionComponent;
+}

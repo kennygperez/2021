@@ -1,6 +1,6 @@
 import { FunctionComponent, useEffect, useState } from 'react';
 
-import '../scss/splash.scss';
+import styles from './Splash.module.scss';
 
 const Splash: FunctionComponent = () => {
 	const [isVisible, setVisibility] = useState<boolean>(true);
@@ -11,9 +11,9 @@ const Splash: FunctionComponent = () => {
 	}, []);
 
 	if (isVisible) {
-		return <div className='splash' />;
+		return <div className={styles.splash} />;
 	} else {
-		return <div className='splash splash--hide' />;
+		return <div className={styles.splash + ' ' + styles['splash--hide']} />;
 	}
 };
 

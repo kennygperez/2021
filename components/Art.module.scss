@@ -1,4 +1,4 @@
-@import './screen.scss';
+@import '../scss/screen.scss';
 
 @mixin slabGenerators {
 	@for $i from 0 to 9 {

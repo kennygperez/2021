@@ -16,6 +16,6 @@
 		"noEmit": true,
 		"jsx": "preserve"
 	},
-	"include": ["typings/declarations.d.ts", "src", "pages", "components"],
+	"include": ["@types/declarations.d.ts", "pages", "components"],
 	"exclude": ["node_modules"]
 }

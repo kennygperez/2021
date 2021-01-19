@@ -5,6 +5,7 @@ import Art from './Art';
 import Project, { ProjectInfo } from './Project';
 import Brands from './Brands';
 import Footer from './Footer';
+import Contact from './Contact';
 
 const App: FunctionComponent = () => {
 	const projects: ProjectInfo[] = [
@@ -89,8 +90,12 @@ const App: FunctionComponent = () => {
 				))}
 			</section>
 
-			<section className='section section--mb'>
+			{/* <section className='section section--mb'>
 				<Brands />
+			</section> */}
+
+			<section className='section section--mb'>
+				<Contact />
 			</section>
 
 			<Footer />

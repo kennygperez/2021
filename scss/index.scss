@@ -46,7 +46,11 @@ h1 {
 }
 
 h2 {
-	font-size: 3rem;
+	font-size: 2rem;
+
+	@media only screen and (min-width: $screen-md) {
+		font-size: 3rem;
+	}
 }
 
 h3 {

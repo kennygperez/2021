@@ -1,0 +1,47 @@
+@import '../scss/colors.scss';
+@import '../scss/screen.scss';
+
+.contact {
+	width: 100%;
+	padding: 1.5rem;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	background-color: $tag-default-bg;
+
+	@media only screen and (min-width: $screen-md) {
+		flex-direction: row;
+		padding: 3rem;
+	}
+
+	&__half {
+		flex: 1 1 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		&:first-child {
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+
+		@media only screen and (min-width: $screen-md) {
+			align-items: flex-end;
+		}
+	}
+
+	&__talk {
+		height: 56px;
+		line-height: 56px;
+		text-align: center;
+		background-color: $header-hue;
+		color: $button-text;
+		border-radius: 4rem;
+		padding: 0 32px;
+		text-decoration: none;
+		display: inline-block;
+		font-weight: 500;
+		font-size: 20px;
+	}
+}

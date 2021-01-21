@@ -16,7 +16,7 @@ const App: FunctionComponent = () => {
 			tags: ['Computer Vision', 'Facecam', 'Node + Express', 'WebSocket'],
 			embed: () => (
 				<img
-					src='/images/ucfhere.jpg'
+					src='/images/lachlan.jpeg'
 					alt='of ucf here app infront of the ucf campus'
 					className='image'
 				/>
